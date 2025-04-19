@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:srd/widgets/MyDocumentsScreen.dart';
+/*import 'package:srd/widgets/MyDocumentsScreen.dart';
 import 'package:srd/widgets/relatorio_page.dart';
 import 'lost_document_screen.dart';
 import 'found_document_screen.dart';
 import 'notificacoes_page.dart'; // Certifique-se de importar estas páginas
-import 'perfil_page.dart';
+import 'perfil_page.dart';*/
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -26,16 +26,16 @@ class _HomePageState extends State<HomePage> {
       // Já estamos na Home, não é necessário navegar
         break;
       case 1:
-        Navigator.push(
+       /* Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => const NotificacoesPage()),
-        );
+        );*/
         break;
       case 2:
-        Navigator.push(
+        /*Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => const PerfilPage()),
-        );
+        );*/
         break;
     }
   }
@@ -63,11 +63,11 @@ class _HomePageState extends State<HomePage> {
               icon: Icons.badge,
               label: 'Documentos Encontrados',
               color: Colors.teal,
-              onTap: () {
-                Navigator.push(
+             onTap: () {
+                /*Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const FoundDocumentScreen()),
-                );
+                );*/
               },
             ),
             _buildCard(
@@ -75,10 +75,10 @@ class _HomePageState extends State<HomePage> {
               label: 'Documentos Perdidos',
               color: Colors.orange,
               onTap: () {
-                Navigator.push(
+                /*Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const LostDocumentScreen()),
-                );
+                );*/
               },
             ),
             _buildCard(
@@ -87,10 +87,10 @@ class _HomePageState extends State<HomePage> {
               color: Colors.blueAccent,
               onTap: () {
                 // Aqui você pode adicionar a navegação para a tela de relatórios
-                Navigator.push(
+                /*Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const RelatorioPage()),
-                );
+                );*/
               },
             ),
             _buildCard(
@@ -98,10 +98,10 @@ class _HomePageState extends State<HomePage> {
               label: 'Meus Documentos',
               color: Colors.amber[700]!,
               onTap: () {
-                Navigator.push(
+               /* Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const MyDocumentsScreen()),
-                );
+                );*/
               },
             ),
           ],
